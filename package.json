@@ -1,0 +1,26 @@
+{
+  "name": "CypressWithTypescript",
+  "version": "1.0.0",
+  "description": "cyypress cucumber typescript webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --spec \"**/*.feature\"",
+    "test:all": "cypress run --spec \"**/*.features\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^7.7.0",
+    "typescript": "^4.3.5",
+    "@cypress/webpack-preprocessor": "^4.0.2",
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "ts-loader": "^5.3.1",
+    "webpack": "^4.28.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions" :"cypress/integration/step_definitions/"
+
+  }
+}
